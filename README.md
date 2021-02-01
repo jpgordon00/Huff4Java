@@ -10,6 +10,7 @@ Huffman compression in Java and a cross-platform UI
 ## What technologies/frameworks are involved?
 - Java
 - JavaFX/[OpenJFX](https://openjfx.io/) for cross-platform UI development
+- [OpenJFXBuilder](https://openjfx.io/javadoc/11/javafx.base/javafx/util/Builder.html) Dev Tool for building JavaFX GUI's 
 - Binary Search Trees, Trees and Tree Traversal 
 
 
@@ -17,3 +18,5 @@ Huffman compression in Java and a cross-platform UI
 ## What did I learn
 - Real-world uses of data structures and discrete math concepts. Trees and traversal algoriths that I have been tought in college level discrete mathematics is directly applicable to Huffman compression.
 - Use of of reccomended development tools. Instead of jumping straight into the code or my favorite program to construct the GUI for this application, I read and tested some development tools reccomended by the OpenJFX developers. By following their best practices, including using their reccomended programs for layout generation, I built this application with minimal time spent with boilerplate code. 
+- How to deal with deployment issues and debugging for cross-platform deployment. Just like in my EasyDrop project that similarily used OpenJFX for a cross-platform GUI, deployment of the application needed additional steps.
+> An example of an error I encountered with this project is when running the JAR fails with specific stacktraces on any machine. By reading the documentation directly from the OpenJFX developers, I found out that my error in specific was caused by missing module dependencies. JavaFX was a library bundled in with Java for many years until a recent Java update removed the library and offered it externally via modular components. These errors taught me how Java's modular components work and operate, and how they differ from traditional JAR libraries.
