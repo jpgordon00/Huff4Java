@@ -18,6 +18,7 @@ Huffman compression in Java and a cross-platform UI
 - Download the folder javafx-sdk'' in this repo (assume $SDK is a valid path to this folder)
 - Run the JAR file with the following command.
 > java --module-path=$SDK --add-modules=javafx.controls,javafx.base -jar Huff4Java.jar
+These commands and why they are required are explained more in the 'What did I learn' section.
 
 
 ## What did I learn
